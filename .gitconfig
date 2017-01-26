@@ -1,0 +1,8 @@
+[user]
+	name = Bonflintstone
+	email = freddy@railslove.com
+[core]
+	autocrlf = false
+	excludesfile = /home/bonflintstone/.gitignore_global
+[push]
+	default = simple
