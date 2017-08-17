@@ -11,11 +11,16 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'slim-template/vim-slim.git'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 filetype plugin indent on
 
-set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow
+let g:ale_linters = {
+      \ 'javascript': [],
+      \ }
+
+set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow splitright
 set smartindent autoindent
 syntax on
 colo slate
@@ -25,3 +30,5 @@ nnoremap <leader>e :e **/*
 nnoremap <leader>s :sp **/*
 nnoremap <leader>v :vsp **/*
 nnoremap <leader>t :tabe **/*
+
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
