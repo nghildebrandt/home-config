@@ -17,8 +17,8 @@ call vundle#end()
 filetype plugin indent on
 
 let g:ale_linters = {
-      \ 'javascript': [],
-      \ }
+  \ 'javascript': [],
+  \ }
 
 set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow splitright
 set smartindent autoindent
@@ -30,5 +30,6 @@ nnoremap <leader>e :e **/*
 nnoremap <leader>s :sp **/*
 nnoremap <leader>v :vsp **/*
 nnoremap <leader>t :tabe **/*
+nnoremap <leader>r :syntax sync minlines=2000
 
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
