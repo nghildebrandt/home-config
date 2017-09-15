@@ -12,6 +12,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'posva/vim-vue'
+Plugin 'wavded/vim-stylus'
+Plugin 'slime-lang/vim-slime-syntax'
 
 call vundle#end()
 filetype plugin indent on
