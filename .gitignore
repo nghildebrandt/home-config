@@ -1,0 +1,8 @@
+**/*
+!.ackrc
+!.gitconfig
+!.rubocop.yml
+!.tmux.conf
+!.vimrc
+!.zshrc
+!.gitignore
