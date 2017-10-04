@@ -1,0 +1,32 @@
+# ~/.tmuxinator/dev.yml
+
+name: numbat
+
+pre_window: rvm use 2.1
+
+windows:
+  - frontend:
+      layout: 9d7b,187x60,0,0[187x50,0,0,18,187x9,0,51{143x9,0,51,19,21x9,144,51,20,21x9,166,51,21}]
+      root: ~/Documents/numbat-webapp/modules
+      panes:
+        - vim
+        -
+        - yarn dev
+        - ember:
+          - cd ..
+          - sleep 5 && mv modules/package.json modules/package.json.bak
+          - nvm use 4
+          - ember serve &
+          - sleep 5 && mv modules/package.json.bak modules/package.json
+          - fg %ember
+
+  - backend:
+      layout: 9d7b,187x60,0,0[187x50,0,0,18,187x9,0,51{143x9,0,51,19,21x9,144,51,20,21x9,166,51,21}]
+      root: ~/Documents/numbat-server
+      panes:
+        - vim
+        -
+        - rs
+        - vpn:
+          - cd ~/certs
+          - 

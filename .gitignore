@@ -1,4 +1,4 @@
-**/*
+*
 !.ackrc
 !.gitconfig
 !.rubocop.yml
@@ -6,3 +6,9 @@
 !.vimrc
 !.zshrc
 !.gitignore
+!.config
+.config/*
+!.config/tmuxinator/
+!.config/tmuxinator/*
+!.config/terminator/
+!.config/terminator/*

@@ -33,5 +33,6 @@ nnoremap <leader>s :sp **/*
 nnoremap <leader>v :vsp **/*
 nnoremap <leader>t :tabe **/*
 nnoremap <leader>r :syntax sync minlines=2000
+nnoremap <leader>n :noh
 
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby

@@ -6,9 +6,10 @@ plugins=(git rails ruby node react-native)
 export ANDROID_HOME=${HOME}/Android/Sdk
 export ANDROID_SDK_ROOT=${HOME}/Android/Sdk/
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/bonflintstone/.rvm/bin:/home/bonflintstone/.rvm/bin:/home/bonflinstone/.phantomjs/bin"
+export PATH=${PATH}:"/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/bonflintstone/.rvm/bin:/home/bonflintstone/.rvm/bin:/home/bonflinstone/.phantomjs/bin"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${HOME}/.yarn/bin
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
@@ -16,11 +17,13 @@ export EDITOR='vim'
 source ~/.rvm/scripts/rvm
 source ~/.runcops
 source ~/.update_ftw_db 
-source ~/.dev-tmux
+source ~/.dev-tmux 
+source ~/.bin/tmuxinator.zsh
 
 alias gdh='git push heroku master'
 alias dokku="$HOME/.dokku/contrib/dokku_client.sh"
 alias brightness="sudo /root/brightness"
+alias mux="rvm 2.3.5 do tmuxinator"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
