@@ -3,6 +3,6 @@
 	email = freddy@railslove.com
 [core]
 	autocrlf = false
-	excludesfile = /home/bonflintstone/.gitignore_global
+	excludesfile = /home/bonflintstone/.global-gitignore
 [push]
 	default = simple

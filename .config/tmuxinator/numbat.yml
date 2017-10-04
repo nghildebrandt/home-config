@@ -2,7 +2,7 @@
 
 name: numbat
 
-pre_window: rvm use 2.1
+pre_window: rvm use 2.2
 
 windows:
   - frontend:
@@ -28,5 +28,5 @@ windows:
         -
         - rs
         - vpn:
-          - cd ~/certs
-          - 
+          - cd ~/Vpns
+          - sudo openvpn ./RACKSPACE_RLOVE.ovpn
