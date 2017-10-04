@@ -24,6 +24,7 @@ alias gdh='git push heroku master'
 alias dokku="$HOME/.dokku/contrib/dokku_client.sh"
 alias brightness="sudo /root/brightness"
 alias mux="rvm 2.3.5 do tmuxinator"
+alias toclip="tmux show-buffer | clipcopy"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
