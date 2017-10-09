@@ -3,21 +3,18 @@ export LANG=en_US.UTF-8
 ZSH_THEME="robbyrussell"
 plugins=(git rails ruby node react-native)
 
-export ANDROID_HOME=${HOME}/Android/Sdk
-export ANDROID_SDK_ROOT=${HOME}/Android/Sdk/
+export ANDROID_SDK_ROOT=${HOME}/.android/sdk
+export ANDROID_HOME=${ANDROID_SDK_ROOT}
 
 export PATH=${PATH}:"/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/bonflintstone/.rvm/bin:/home/bonflintstone/.rvm/bin:/home/bonflinstone/.phantomjs/bin"
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_SDK_ROOT}/tools
+export PATH=${PATH}:${ANDROID_SDK_ROOT}/platform-tools
 export PATH=${PATH}:${HOME}/.yarn/bin
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 source ~/.rvm/scripts/rvm
-source ~/.runcops
-source ~/.update_ftw_db 
-source ~/.dev-tmux 
 source ~/.bin/tmuxinator.zsh
 
 alias gdh='git push heroku master'
