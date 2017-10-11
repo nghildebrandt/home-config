@@ -14,10 +14,10 @@ windows:
         - yarn dev
         - ember:
           - cd ..
-          - sleep 10 && mv modules/package.json modules/package.json.bak
+          - sleep 5 && mv modules/package.json modules/package.json.bak
           - nvm use 4
           - ember serve &
-          - sleep 10 && mv modules/package.json.bak modules/package.json
+          - sleep 20 && mv modules/package.json.bak modules/package.json
           - fg %ember
 
   - backend:
