@@ -14,6 +14,10 @@ Plugin 'slim-template/vim-slim.git'
 Plugin 'posva/vim-vue'
 Plugin 'wavded/vim-stylus'
 Plugin 'slime-lang/vim-slime-syntax'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
