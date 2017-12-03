@@ -1,9 +1,9 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'w0rp/ale'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'kchmck/vim-coffee-script'
@@ -18,7 +18,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-
 call vundle#end()
 filetype plugin indent on
 
@@ -28,6 +27,7 @@ let g:ale_linters = {
 
 set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow splitright
 set smartindent autoindent
+set noswapfile
 syntax on
 colo slate
 
