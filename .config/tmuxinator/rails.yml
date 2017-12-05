@@ -1,9 +1,11 @@
 # ~/.tmuxinator/dev.yml
 
 name: dev
-root: /home/bonflintstone/Documents/social-magazine
+root: <%= @settings[:dir] || `pwd` %>
 
-pre_window: rvm use 2.1
+pre_window:
+  - if [ -e '.ruby-version' ]; then; rvm use $(cat .ruby-version); fi
+  - clear
 
 windows:
   - editor:
