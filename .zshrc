@@ -22,6 +22,11 @@ alias toclip="tmux show-buffer | clipcopy"
 alias gall="git add --all :/"
 alias o="xdg-open"
 
+# Fixes that should not be
+function sdp_dokku {
+  (cd ~ && DOKKU_PORT=2222 DOKKU_HOST=sdp-web dokku "$1 web ${@:2}")
+}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
