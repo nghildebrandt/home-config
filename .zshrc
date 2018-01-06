@@ -1,6 +1,6 @@
 export ZSH=/home/bonflintstone/.oh-my-zsh
 export LANG=en_US.UTF-8
-ZSH_THEME="robbyrussell"
+export ZSH_THEME="robbyrussell"
 plugins=(git rails ruby node react-native)
 
 export ANDROID_SDK_ROOT=${HOME}/.android/sdk
