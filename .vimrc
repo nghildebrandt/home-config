@@ -40,5 +40,7 @@ nnoremap <leader>r :syntax sync minlines=2000
 nnoremap <leader>n :noh
 
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *Thorfile set ft=ruby
 au BufNewFile,BufRead *.slim set ft=slim
 au BufNewFile,BufRead *.es6 set ft=javascript
+au BufNewFile,BufRead *.hbs set ft=html
