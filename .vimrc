@@ -18,12 +18,9 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+Plugin 'isRuslan/vim-es6'
 call vundle#end()
 filetype plugin indent on
-
-let g:ale_linters = {
-  \ 'javascript': [],
-  \ }
 
 set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow splitright
 set smartindent autoindent
@@ -39,8 +36,10 @@ nnoremap <leader>t :tabe **/*
 nnoremap <leader>r :syntax sync minlines=2000
 nnoremap <leader>n :noh
 
-au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *.jbuilder set ft=ruby
 au BufNewFile,BufRead *Thorfile set ft=ruby
+au BufNewFile,BufRead *Fastfile set ft=ruby
 au BufNewFile,BufRead *.slim set ft=slim
 au BufNewFile,BufRead *.es6 set ft=javascript
+au BufNewFile,BufRead *Jenkinsfile set ft=javascript
 au BufNewFile,BufRead *.hbs set ft=html

@@ -8,14 +8,14 @@ pre_window: nvm use 9.2
 windows:
   - frontend:
       layout: 9d7b,187x60,0,0[187x50,0,0,18,187x9,0,51{143x9,0,51,19,21x9,144,51,20,21x9,166,51,21}]
-      root: ~/Documents/numbat-webapp/modules
+      root: ~/Documents/numbat-webapp
       panes:
         - vim
         -
-        - yarn dev
-        - ember:
-          - cd ..
-          - ember serve
+        - ember serve
+        - vue:
+          - cd modules
+          - yarn dev
 
   - backend:
       layout: 9d7b,187x60,0,0[187x50,0,0,18,187x9,0,51{143x9,0,51,19,21x9,144,51,20,21x9,166,51,21}]
