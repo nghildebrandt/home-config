@@ -19,6 +19,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'isRuslan/vim-es6'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -28,11 +29,13 @@ set noswapfile
 syntax on
 colo slate
 
+" for ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zi,*/node_modules/*,*/bower_components/*,*.class
+
 let mapleader = ' '
-nnoremap <leader>e :e **/*
-nnoremap <leader>s :sp **/*
-nnoremap <leader>v :vsp **/*
-nnoremap <leader>t :tabe **/*
+nnoremap <leader>s :sp
+nnoremap <leader>v :vsp
+nnoremap <leader>t :tabe
 nnoremap <leader>r :syntax sync minlines=2000
 nnoremap <leader>n :noh
 
@@ -43,3 +46,4 @@ au BufNewFile,BufRead *.slim set ft=slim
 au BufNewFile,BufRead *.es6 set ft=javascript
 au BufNewFile,BufRead *Jenkinsfile set ft=javascript
 au BufNewFile,BufRead *.hbs set ft=html
+au BufNewFile,BufRead *.java set noexpandtab

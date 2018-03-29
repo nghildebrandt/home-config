@@ -21,6 +21,8 @@ alias mux="rvm 2.3.5 do tmuxinator"
 alias toclip="tmux show-buffer | clipcopy"
 alias gall="git add --all :/"
 alias o="xdg-open"
+alias p="qpdfview"
+alias pa="qpdfview **/*pdf"
 alias ggpush='git push origin $(git_current_branch) --tags'
 alias ggpull='git pull origin $(git_current_branch) --tags'
 
