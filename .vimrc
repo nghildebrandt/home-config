@@ -28,11 +28,15 @@ set smartindent autoindent
 set noswapfile
 syntax on
 colo slate
+highlight Search cterm=underline
 
 " for ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zi,*/node_modules/*,*/bower_components/*,*.class
 
 let mapleader = ' '
+nnoremap <leader>e :Explore
+nnoremap <leader>q :q
+nnoremap <leader>w :w
 nnoremap <leader>s :sp
 nnoremap <leader>v :vsp
 nnoremap <leader>t :tabe
