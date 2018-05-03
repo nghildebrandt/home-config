@@ -25,6 +25,7 @@ alias p="qpdfview"
 alias pa="qpdfview **/*pdf"
 alias ggpush='git push origin $(git_current_branch) --tags'
 alias ggpull='git pull origin $(git_current_branch) --tags'
+alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
 
 # Fixes that should not be
 function sdp_dokku {
