@@ -1,0 +1,20 @@
+[global_config]
+  geometry_hinting = False
+  window_state = fullscreen
+[keybindings]
+  broadcast_all = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    custom_command = tmux attach
+    exit_action = restart
+    use_custom_command = True
