@@ -1,6 +1,8 @@
 [user]
 	name = Niklas Hildebarndt
 	email = n.g.hildebrandt@gmail.com
+[core]
+	autocrlf = false
+	excludesfile = ~/.global-gitignore
 [push]
-	defaul = simple
 	default = simple
