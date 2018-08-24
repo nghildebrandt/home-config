@@ -22,6 +22,7 @@ Plugin 'kern/vim-es7'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'othree/yajs.vim'
 call vundle#end()
+execute pathogen#infect()
 filetype plugin indent on
 
 set expandtab tabstop=2 softtabstop=0 shiftwidth=2 smarttab hlsearch splitbelow splitright
